@@ -1,0 +1,12 @@
+<div class='container'>
+  <h3 ><center>Settings</center></h3>
+  <%= form_with model: @setting do |form| %>
+    <div class="form-check row col-md-12">
+      <%= form.check_box :display_result, class: "form-check-input" %>
+      <%= form.label :display_result, class: "form-check-label" %>
+    </div>
+    <div class='col-md-12 text-center'>
+      <%= form.submit 'Submit', class: 'btn btn-primary btn-lg'%>
+    </div>
+  <% end %>
+</div>

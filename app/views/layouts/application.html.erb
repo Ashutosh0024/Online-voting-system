@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evoters</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <% if user_signed_in? %>
+      <%= render partial: 'layouts/admin_header' %>
+    <% end %>
+    <% flash.each do |key, value| %>
+      <div class='alert alert-info'>
+        <%= value %>
+      </div>
+    <% end %>
+    <div>
+      <%= yield %>
+    </div>
+  </body>
+</html>

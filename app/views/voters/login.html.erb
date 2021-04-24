@@ -1,0 +1,11 @@
+<div class="login-form">    
+  <%= form_with url: authorize_voters_url, method: :get do |form| %>
+    <div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+      <h4 class="modal-title"><b>Please Enter your Voter-Id</b></h4>
+      <div class="form-group">
+        <%= form.text_field :voter_id, class: 'form-control', placeholder: 'Enter your Voter ID'%>
+      </div>
+      <%= form.submit 'Submit', class: 'btn btn-primary btn-block btn-lg'%>
+    </div>           
+  <% end %>     
+</div>

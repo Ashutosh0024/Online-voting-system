@@ -1,0 +1,165 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url("/images/best.png") center center;
+    background-size: cover;
+    position: relative;
+    margin-top: 0px;
+    padding: 0;
+}
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.31);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+      
+  #hero .container {
+    z-index: 2;
+  }andidates
+      
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+      
+  #hero h1 span {
+    border-bottom: 4px solid #ffff;
+  }
+      
+  #hero h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+      
+  #hero .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #70e2098c;
+    text-transform: uppercase;
+  }
+      
+  #hero .btn-get-started:hover {
+    background: #ff4467
+  }
+      
+  @media (max-width: 992px) {
+  #hero {
+    height: calc(100vh - 70px);
+  }
+  }
+      
+  @media (max-width: 768px) {
+  #hero h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.form-control {
+    box-shadow: none;
+    border-color: #ddd;
+}
+.form-control:focus {
+    border-color: #4aba70; 
+}
+.login-form {
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.login-form form {
+    color: #434343;
+    border-radius: 1px;
+    margin-bottom: 15px;
+    background: #fff;
+    border: 1px solid #f3f3f3;
+    box-shadow: 0px 10px 10px rgba(104, 103, 103, 0.3);
+    padding: 30px;
+}
+.login-form h4 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.login-form .avatar {
+    color: #fff;
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #000000;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.login-form .avatar i {
+    font-size: 62px;
+}
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+.login-form .form-control, .login-form .btn {
+    min-height: 40px;
+    border-radius: 2px; 
+    transition: all 0.5s;
+}
+.login-form .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.login-form .btn {
+    background: #5c92e2;
+    border: none;
+    line-height: normal;
+}
+.login-form .btn:hover, .login-form .btn:focus {
+    background: #000000;
+}
+.login-form .checkbox-inline {
+    float: left;
+}
+.login-form input[type="checkbox"] {
+    margin-top: 2px;
+}
+.login-form .forgot-link {
+    float: right;
+}
+.login-form .small {
+    font-size: 13px;
+}
+.login-form a {
+    color: #4aba70;
+}
+
+
+hr.new4 {
+  border: 1px solid black;
+}
+.jumbotron{
+    background-color: #ffffff
+    
+}

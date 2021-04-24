@@ -1,0 +1,36 @@
+<hr>
+<div class="container-fluid">
+  <div class="jumbotron jumbotron-fluid  shadow-lg  bg-white rounded">
+    <div class="container">
+      <h2>
+        <center>
+          <%= @winner.firstname %> <%= @winner.lastname %>
+          <span class="badge badge-danger">
+            Winner!!!
+          </span>
+        </center>
+      </h2>
+      <h4><center>Total Votes Received: <%= @winner.vote_count %></center></h4>
+      <h4><center>Party: <%= @winner.party %></center></h4>
+    </div>
+  </div>
+<table class="table table-striped table-light text-black table-hover table table-bordered">
+  <thead>
+    <tr class="table-success">
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Vote Count</th>
+      <th>Party</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @candidates.all.each do |candidate| %>
+      <tr>
+        <td><%= candidate.firstname %></td>
+        <td><%= candidate.lastname %></td>
+        <td><%= candidate.vote_count %></td>
+        <td><%= candidate.party %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
